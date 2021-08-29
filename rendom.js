@@ -38,15 +38,15 @@ function showUser(user) {
 
     // date change
 
-    document.getElementById('email').addEventListener('mouseover', function() {
-        display.innerText = `${user.dob.date}`;
+    document.getElementById('dob').addEventListener('mouseover', function() {
+        display.innerText = `${user.dob.date.slice(0, 10)}`;
         intro.innerText = `My brithday`;
     })
 
     // phone change
     document.getElementById('phone').addEventListener('mouseover', function() {
         display.innerText = `${user.phone}`;
-        intro.innerText = `My brithday`;
+        intro.innerText = `My phone number`;
     })
 
     // adress change
